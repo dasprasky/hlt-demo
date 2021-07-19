@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		6F2BA6502664CF9D002A4F05 /* polyfit.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F2BA64E2664CF9D002A4F05 /* polyfit.c */; };
 		6F2BA6512664CF9D002A4F05 /* respiration_functions.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F2BA64F2664CF9D002A4F05 /* respiration_functions.c */; };
+		6F48B26E267C422300C5A812 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F48B26D267C422300C5A812 /* ItemView.swift */; };
+		6F48B270267C546700C5A812 /* NewInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F48B26F267C546700C5A812 /* NewInfoController.swift */; };
 		6F97F746265E318F0099F69C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F97F745265E318F0099F69C /* AppDelegate.swift */; };
 		6F97F748265E318F0099F69C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F97F747265E318F0099F69C /* SceneDelegate.swift */; };
 		6F97F74A265E318F0099F69C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F97F749265E318F0099F69C /* ViewController.swift */; };
@@ -31,6 +33,8 @@
 		6F2BA64D2664CF9C002A4F05 /* polyfit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = polyfit.h; sourceTree = "<group>"; };
 		6F2BA64E2664CF9D002A4F05 /* polyfit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = polyfit.c; sourceTree = "<group>"; };
 		6F2BA64F2664CF9D002A4F05 /* respiration_functions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = respiration_functions.c; sourceTree = "<group>"; };
+		6F48B26D267C422300C5A812 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		6F48B26F267C546700C5A812 /* NewInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewInfoController.swift; sourceTree = "<group>"; };
 		6F97F742265E318F0099F69C /* hrvdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hrvdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F97F745265E318F0099F69C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F97F747265E318F0099F69C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,12 +112,14 @@
 				6F97F749265E318F0099F69C /* ViewController.swift */,
 				6F97F74B265E318F0099F69C /* Main.storyboard */,
 				6F97F761265F418F0099F69C /* InfoController.swift */,
+				6F48B26F267C546700C5A812 /* NewInfoController.swift */,
 				6F97F74E265E31910099F69C /* Assets.xcassets */,
 				6F97F750265E31910099F69C /* LaunchScreen.storyboard */,
 				6F97F753265E31910099F69C /* Info.plist */,
 				6F97F759265E3ADD0099F69C /* BleSingleton.swift */,
 				6F97F75B265E3B1C0099F69C /* Constants.swift */,
 				6F97F75D265E3B430099F69C /* customNSNotifications.swift */,
+				6F48B26D267C422300C5A812 /* ItemView.swift */,
 			);
 			path = hrvdemo;
 			sourceTree = "<group>";
@@ -245,7 +251,9 @@
 				6F97F75E265E3B430099F69C /* customNSNotifications.swift in Sources */,
 				6F2BA6512664CF9D002A4F05 /* respiration_functions.c in Sources */,
 				6F2BA6502664CF9D002A4F05 /* polyfit.c in Sources */,
+				6F48B26E267C422300C5A812 /* ItemView.swift in Sources */,
 				6F97F75C265E3B1C0099F69C /* Constants.swift in Sources */,
+				6F48B270267C546700C5A812 /* NewInfoController.swift in Sources */,
 				6F97F762265F418F0099F69C /* InfoController.swift in Sources */,
 				6F97F74A265E318F0099F69C /* ViewController.swift in Sources */,
 				6F97F746265E318F0099F69C /* AppDelegate.swift in Sources */,
@@ -399,8 +407,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.1;
+				CURRENT_PROJECT_VERSION = 2.0.2.1;
 				DEVELOPMENT_TEAM = LJ358E3D2T;
 				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
 					"$(inherited)",
@@ -414,8 +423,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wbd101.heraletodemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "hrvdemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -430,8 +441,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.1;
+				CURRENT_PROJECT_VERSION = 2.0.2.1;
 				DEVELOPMENT_TEAM = LJ358E3D2T;
 				INFOPLIST_FILE = hrvdemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -439,8 +451,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wbd101.heraletodemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "hrvdemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

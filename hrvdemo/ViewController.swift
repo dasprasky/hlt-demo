@@ -38,11 +38,7 @@ class ViewController: UIViewController {
                 self.animationView?.isHidden = true
                 self.connect_button.isHidden = false
                 self.connetingText.isHidden = true
-              // your code here
-//                let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//                let newViewController = storyBoard.instantiateViewController(withIdentifier: "Info") as! InfoController
-//                self.present(newViewController, animated: true, completion: nil)
-                self.performSegue(withIdentifier: "connectSegue", sender: self)
+                self.performSegue(withIdentifier: "newConnectSegue", sender: self)
             }
         }}
     }
@@ -97,5 +93,29 @@ class ViewController: UIViewController {
             return UIColor(cgColor: color)
         }
     }
-}
+    @IBInspectable var shadowRadius: CGFloat {
+        set {
+            self.layer.shadowRadius = newValue
+        }
+        get {
+            return self.layer.shadowRadius
+        }
+    }
 
+    @IBInspectable var shadowOpacity: Float {
+        set {
+            self.layer.shadowOpacity = newValue
+        }
+        get {
+            return self.layer.shadowOpacity
+        }
+    }
+    @IBInspectable var shadowOffset: CGSize {
+        set {
+            self.layer.shadowOffset = newValue
+        }
+        get {
+            return self.layer.shadowOffset
+        }
+    }
+}
